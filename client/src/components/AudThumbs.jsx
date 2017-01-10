@@ -31,6 +31,7 @@ class AudThumbs extends Component {
       socket.emit('thumb clicked', currentTopicId, userId, thumbChoice);
       // fade out component and set 'displayed' property to false in the store
       $('#Thumbs').fadeOut(1);
+      thumbsDisplayed = false; // store that thumbs box has been closed
     });
 
     // Trigger thumbs box to close if still open
